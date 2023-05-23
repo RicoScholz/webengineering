@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 8em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Marathon Regestrierung!</h1>
+
+    <form action="">
+        <label for="vorname">Vorname</label>
+        <input type="text" name="vorname" id="vorname">
+
+        <label for="nachname">Nachname</label>
+        <input type="text" name="nachname" id="nachname">
+
+        <p>Wähle die Distanz:</p>
+
+        <input type="radio" id="spaßlauf" name="distanz" value="Spaßlauf">
+        <label for="spaßlauf">Spaßlauf</label><br>
+
+        <input type="radio" id="halbmarathon" name="distanz" value="Halbmarathon">
+        <label for="halbmarathon">Halbmarathon</label><br>
+
+        <input type="radio" id="marathon" name="distanz" value="Marathon">
+        <label for="marathon">Marathon</label><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+
+        <label for="passwort">Passwort</label>
+        <input type="password" name="passwort" id="passwort"><br><br>
+
+        <label for="alter">Wähle dein Alter</label>
+        <select name="alter" id="alter">
+            <option value="altgenug">Über 18</option>
+            <option value="nichtaltgenug" selected>Unter 18</option>
+        </select><br><br>
+
+        <input type="submit" value="Registrieren!">
+    </form>
+</body>
+
+</html>
