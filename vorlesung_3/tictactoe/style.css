@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    font-size: 40px;
+    cursor: pointer;
+    height: 80px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+}
