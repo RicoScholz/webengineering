@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DummyJSON</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <aside id="filter">
+        <button class="btn" onclick="showCategories()">Show categories</button>
+    </aside>
+
+    <main>
+        <section id="buttons">
+            <span>
+                <input id="searchInput" type="text" placeholder="e.g. iPhone" required>
+                <button class="btn" onclick="searchForProducts()">Search</button>
+            </span>
+            <span>
+                <button class="btn" onclick="getAllProducts()">All Products</button>
+                <button class="btn" onclick="getRandomProduct()">Random Product</button>
+            </span>
+        </section>
+        
+        <section id="content">
+            <table id="productTable"></table>
+            <div id="singleProduct"></div>
+        </section>
+    </main>
+</body>
+
+</html>
