@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 400px;
+    margin: 8em auto 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#message {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#message.error {
+    color: red;
+}
+
+#message.success {
+    color: green;
+}
+
+#repos-list {
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+#repos-list li {
+    list-style: none;
+    margin-bottom: 5px;
+}
