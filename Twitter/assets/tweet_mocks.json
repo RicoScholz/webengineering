@@ -1,0 +1,39 @@
+{
+   "tweets": [
+     {
+       "fullname": "René Decartes",
+       "username": "decartes",
+       "tweetMessage": "Ich denke, also bin ich",
+       "timestamp": "1637"
+     },
+     {
+       "fullname": "Bob",
+       "username": "spongebob",
+       "tweetMessage": "Ist der Finger oben, wird man dich loben",
+       "timestamp": "vor einer Ewigkeit"
+     },
+     {
+       "fullname": "Sokrates",
+       "username": "sokrates",
+       "tweetMessage": "Ich weiß, dass ich nichts weiß.",
+       "timestamp": "400 v. Chr."
+     },
+     {
+       "fullname": "Lügner Paradox",
+       "username": "paradox",
+       "tweetMessage": "Der nächste Satz ist falsch.\nDer vorhergehende Satz ist wahr."
+     },
+     {
+       "fullname": "Albert Einstein",
+       "username": "einstein",
+       "tweetMessage": "Wenn ein unordentlicher Schreibtisch ein Zeichen für einen unordentlichen Verstand ist, wofür steht dann ein leerer Schreibtisch?",
+       "timestamp": "1951"
+     },
+     {
+       "fullname": "Abraham Lincoln",
+       "username": "lincoln",
+       "tweetMessage": "You can fool all of the people some of the time, and some of the people all of the time, but you can't fool all of the people all of the time.",
+       "timestamp": "1863"
+     }
+   ]
+}
