@@ -1,5 +1,3 @@
-// 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
-
 const form = document.querySelector('#login-form');
 const message = document.querySelector('#message');
 const reposList = document.querySelector('#repos-list');
