@@ -7,3 +7,4 @@
 - Lighthouse
 - Demo
 - CRUD: Create Read Update Delete
+- Readme erweitern
