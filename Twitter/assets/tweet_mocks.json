@@ -10,7 +10,8 @@
        "fullname": "Bob",
        "username": "spongebob",
        "tweetMessage": "Ist der Finger oben, wird man dich loben",
-       "timestamp": "vor einer Ewigkeit"
+       "timestamp": "vor einer Ewigkeit",
+       "image": "https://upload.wikimedia.org/wikipedia/en/3/3b/SpongeBob_SquarePants_character.svg"
      },
      {
        "fullname": "Sokrates",
@@ -27,7 +28,8 @@
        "fullname": "Albert Einstein",
        "username": "einstein",
        "tweetMessage": "Wenn ein unordentlicher Schreibtisch ein Zeichen für einen unordentlichen Verstand ist, wofür steht dann ein leerer Schreibtisch?",
-       "timestamp": "1951"
+       "timestamp": "1951",
+       "image": "https://image.geo.de/30086896/t/Pt/v3/w1440/r0/-/einstein-gross-jpg--41890-.jpg"
      },
      {
        "fullname": "Abraham Lincoln",

@@ -13,6 +13,7 @@ const dev = {
     mocksOnly: document.querySelector('.dev-mocks-only'),
     randomTweet: document.querySelector('.dev-random-tweet'),
     weatherTweet: document.querySelector('.dev-weather-tweet'),
+    dogTweet: document.querySelector('.dev-dog-tweet'),
     deleteAll: document.querySelector('.dev-delete-all')
 };
 
@@ -65,6 +66,10 @@ dev.weatherTweet.addEventListener('click', e => {
     getWeather().then(createTweet);
 });
 
+dev.dogTweet.addEventListener('click', e => {
+    getDogTweet().then(createTweet);
+});
+
 dev.deleteAll.addEventListener('click', deleteAll);
 
 // ========================= APIs =========================
@@ -82,21 +87,30 @@ const mocks = fetch('assets/tweet_mocks.json')
 
 function getWeather() {
     return fetch('https://api.open-meteo.com/v1/forecast?latitude=48.78&longitude=9.18&timezone=Europe/Berlin&hourly=temperature_2m')
-    .then(res => res.json())
-    .then(data => {
-        return {
-            fullname: 'Open Meteo',
-            username: 'weather',
-            tweetMessage: `In Stuttgart hat es gerade ${data.hourly.temperature_2m[0]}°C`
-        };
-    });
+        .then(res => res.json())
+        .then(data => {
+            return {
+                fullname: 'Open Meteo',
+                username: 'weather',
+                tweetMessage: `In Stuttgart hat es gerade ${data.hourly.temperature_2m[0]}°C #HOT ☀️⚡️🌧️`,
+                image: 'https://images.theconversation.com/files/232705/original/file-20180820-30593-1nxanpj.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop'
+            };
+        });
 }
 
-function getRandomImage(size) {
-    return fetch(`https://picsum.photos/${size}`)
-        .then(console.log);
+function getDogTweet() {
+    return fetch('https://dog.ceo/api/breeds/image/random')
+        .then(res => res.json())
+        .then(data => {
+            return {
+                fullname: 'Dog Diggle',
+                username: 'hund',
+                tweetMessage: 'Ich bin ein räudiger Hund #WHOLETTHEDOGSOUT 🐶🐕🐕‍🦺🦮🦴🤩',
+                image: data.message
+            };
+        });
 }
-    
+
 // ========================= C R U D =========================
 
 function createTweet(tweet) {
@@ -189,7 +203,8 @@ function tweetFactory(tweet, key) {
     const tweet_edit_img = document.createElement('img');
     const tweet_delete_button = document.createElement('button');
     const tweet_delete_img = document.createElement('img');
-    const tweet_content = document.createElement('span');
+    const tweet_content = document.createElement('div');
+    const tweet_text = document.createElement('span');
 
     // add classes
     tweet_div.setAttribute('data-dbkey', key);
@@ -201,6 +216,7 @@ function tweetFactory(tweet, key) {
     tweet_buttons.classList = 'tweet-buttons';
     tweet_edit_img.classList = 'tweet-edit';
     tweet_delete_img.classList = 'tweet-delete';
+    tweet_text.classList = 'tweet-text';
     tweet_content.classList = 'tweet-content';
 
     // edit button
@@ -221,7 +237,7 @@ function tweetFactory(tweet, key) {
     tweet_name.innerText = tweet.fullname;
     tweet_username.innerText = `@${tweet.username}`;
     tweet_time.innerText = tweet.timestamp;
-    tweet_content.innerText = tweet.tweetMessage;
+    tweet_text.innerText = tweet.tweetMessage;
 
     // append to dom
     tweet_caption.append(tweet_name);
@@ -232,6 +248,18 @@ function tweetFactory(tweet, key) {
     tweet_buttons.append(tweet_edit_button);
     tweet_buttons.append(tweet_delete_button);
     tweet_caption.append(tweet_buttons);
+    tweet_content.append(tweet_text);
+
+    if (tweet.image) {
+        const tweet_image = document.createElement('img');
+        tweet_image.classList = 'tweet-image';
+        tweet_image.src = tweet.image;
+        tweet_image.alt = "Cute Dog";
+        tweet_image.width = 400;
+        tweet_image.height = 400;
+        tweet_content.append(tweet_image);
+    }
+
     tweet_div.append(tweet_caption);
     tweet_div.append(tweet_content);
     dom.tweets.prepend(tweet_div);

@@ -73,7 +73,6 @@ button {
 
 /*-------------------------------------------------------------------------*/
 
-header,
 footer {
     background-color: #1d9bf0;
     color: white;
@@ -207,10 +206,22 @@ main {
 }
 
 .tweet-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tweet-text {
     overflow-wrap: break-word;
     border: none;
     width: 100%;
     height: fit-content;
+    margin-bottom: 2em;
+}
+
+.tweet-image {
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 /*-------------------------------------------------------------------------*/
