@@ -384,4 +384,12 @@ aside.right {
     .responsive{
         flex-direction: column-reverse;
     }
+
+    .mandatory{
+        display: none;
+    }
+
+    .datenschutz{
+        display: none;
+    }
 }
