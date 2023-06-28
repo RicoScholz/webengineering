@@ -50,7 +50,6 @@ button {
 #dev-tools {
     visibility: hidden;
     position: absolute;
-    top: 50px;
     left: -150px;
     display: flex;
     flex-direction: column;
@@ -383,5 +382,13 @@ aside.right {
 
     .responsive{
         flex-direction: column-reverse;
+    }
+
+    .mandatory{
+        display: none;
+    }
+
+    .datenschutz{
+        display: none;
     }
 }
