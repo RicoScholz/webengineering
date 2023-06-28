@@ -342,3 +342,46 @@ aside.right {
     color: gray;
     font-size: 0.8em;
 }
+
+.responsive{
+    display: flex;
+    width: 100%;
+}
+
+@media only screen and (max-width: 710px) {
+    #content {
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    aside.left {
+        width: 100%;
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav>button {
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    aside.right {
+        width: 100%;
+    }
+
+    .trends {
+      display: none;
+    }
+
+    .responsive{
+        flex-direction: column-reverse;
+    }
+}
