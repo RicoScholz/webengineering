@@ -1,0 +1,27 @@
+body {
+    overflow: hidden;
+}
+
+section {
+    height: 100vh;
+    text-align: center;
+    line-height: 100vh;
+    font-weight: bold;
+    font-size: 10em;
+}
+
+#home {
+    background-color: #ffdbdb;
+}
+
+#news {
+    background-color: #ffffcb;
+}
+
+#contact {
+    background-color: #deffde;
+}
+
+#about {
+    background-color: #dcdcff;
+}
