@@ -120,7 +120,7 @@ function createTweet(tweet) {
 
 function updateTweet(tweetContainer) {
     const newMessage = dom.tweetbox.value;
-    tweetContainer.querySelector('.tweet-content').innerText = newMessage;
+    tweetContainer.querySelector('.tweet-text').innerText = newMessage;
     tweetContainer.removeAttribute('data-edit');
     tweetContainer.scrollIntoView();
     dom.tweetboxSubmit.innerText = 'Tweet';
@@ -180,12 +180,12 @@ function newTweetFromInput() {
 function onTweetEdit(el) {
     const tweet = el.closest('.tweet');
     dom.tweetbox.focus();
-    dom.tweetbox.value = tweet.querySelector('.tweet-content').innerText;
+    dom.tweetbox.value = tweet.querySelector('.tweet-text').innerText;
     dom.tweetboxFullname.value = tweet.querySelector('.tweet-name').innerText;
     dom.tweetboxUsername.value = tweet.querySelector('.tweet-username').innerText.slice(1);
     tweet.setAttribute('data-edit', "");
     dom.tweetboxSubmit.innerText = 'Update';
-    dom.tweetboxCharlength.innerText = 280 - tweet.querySelector('.tweet-content').innerText.length;
+    dom.tweetboxCharlength.innerText = 280 - tweet.querySelector('.tweet-text').innerText.length;
 }
 
 function tweetFactory(tweet, key) {

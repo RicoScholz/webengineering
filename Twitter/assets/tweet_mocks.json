@@ -1,41 +1,75 @@
 {
-   "tweets": [
-     {
-       "fullname": "René Decartes",
-       "username": "decartes",
-       "tweetMessage": "Ich denke, also bin ich",
-       "timestamp": "1637"
-     },
-     {
-       "fullname": "Bob",
-       "username": "spongebob",
-       "tweetMessage": "Ist der Finger oben, wird man dich loben",
-       "timestamp": "vor einer Ewigkeit",
-       "image": "https://upload.wikimedia.org/wikipedia/en/3/3b/SpongeBob_SquarePants_character.svg"
-     },
-     {
-       "fullname": "Sokrates",
-       "username": "sokrates",
-       "tweetMessage": "Ich weiß, dass ich nichts weiß.",
-       "timestamp": "400 v. Chr."
-     },
-     {
-       "fullname": "Lügner Paradox",
-       "username": "paradox",
-       "tweetMessage": "Der nächste Satz ist falsch.\nDer vorhergehende Satz ist wahr."
-     },
-     {
-       "fullname": "Albert Einstein",
-       "username": "einstein",
-       "tweetMessage": "Wenn ein unordentlicher Schreibtisch ein Zeichen für einen unordentlichen Verstand ist, wofür steht dann ein leerer Schreibtisch?",
-       "timestamp": "1951",
-       "image": "https://image.geo.de/30086896/t/Pt/v3/w1440/r0/-/einstein-gross-jpg--41890-.jpg"
-     },
-     {
-       "fullname": "Abraham Lincoln",
-       "username": "lincoln",
-       "tweetMessage": "You can fool all of the people some of the time, and some of the people all of the time, but you can't fool all of the people all of the time.",
-       "timestamp": "1863"
-     }
-   ]
+  "tweets": [
+    {
+      "fullname": "René Decartes",
+      "username": "decartes",
+      "tweetMessage": "Ich denke, also bin ich",
+      "timestamp": "1637"
+    },
+    {
+      "fullname": "Bob",
+      "username": "spongebob",
+      "tweetMessage": "Ist der Finger oben, wird man dich loben",
+      "timestamp": "vor einer Ewigkeit",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/3b/SpongeBob_SquarePants_character.svg"
+    },
+    {
+      "fullname": "Sokrates",
+      "username": "sokrates",
+      "tweetMessage": "Ich weiß, dass ich nichts weiß.",
+      "timestamp": "400 v. Chr."
+    },
+    {
+      "fullname": "Lügner Paradox",
+      "username": "paradox",
+      "tweetMessage": "Der nächste Satz ist falsch.\nDer vorhergehende Satz ist wahr."
+    },
+    {
+      "fullname": "Albert Einstein",
+      "username": "einstein",
+      "tweetMessage": "Wenn ein unordentlicher Schreibtisch ein Zeichen für einen unordentlichen Verstand ist, wofür steht dann ein leerer Schreibtisch?",
+      "timestamp": "1951",
+      "image": "https://image.geo.de/30086896/t/Pt/v3/w1440/r0/-/einstein-gross-jpg--41890-.jpg"
+    },
+    {
+      "fullname": "Abraham Lincoln",
+      "username": "lincoln",
+      "tweetMessage": "You can fool all of the people some of the time, and some of the people all of the time, but you can't fool all of the people all of the time.",
+      "timestamp": "1863"
+    },
+    {
+      "fullname": "Erkan Alles",
+      "username": "werKannDerKann",
+      "tweetMessage": "Zwei Dinge, die nichts gemeinsam haben, haben dadurch etwas gemeinsam. #ichbinschlau"
+    },
+    {
+      "fullname": "Andi Mauer",
+      "username": "dieGroßeMauer",
+      "tweetMessage": "Schwimmen ist nur Spaß haben während man versucht nicht zu ertrinken..."
+    },
+    {
+      "fullname": "Clara Himmel",
+      "username": "sternHimmel",
+      "tweetMessage": "Cheese has holes. More cheese = more holes. More holes = less cheese. More cheese = less cheese."
+    },
+    {
+      "fullname": "Andi Mauer",
+      "username": "dieGroßeMauer",
+      "tweetMessage": "If you think about it, clocks are just three nested for-loops.",
+      "image": "https://media.tenor.com/RVvnVPK-6dcAAAAM/reload-cat.gif"
+    },
+    {
+      "fullname": "Marie Huana",
+      "username": "fortwenti",
+      "tweetMessage": "Justice is a dish best served cold. If it were served warm, it would be justwater."
+    },
+    {
+      "fullname": "Rainer Wahnsinn",
+      "username": "dasischjaderWahnsinn",
+      "tweetMessage": "Du hast versucht einen Vogel einzusperren, einen freien Adler, der versucht hat zu fliegen hast du versucht einzusperrt. EINZUSPERREN!",
+      "image": "https://static.vecteezy.com/ti/gratis-vektor/p3/20119249-adler-tier-karikatur-farbig-clip-art-illustration-kostenlos-vektor.jpg"
+    }
+
+    
+  ]
 }
