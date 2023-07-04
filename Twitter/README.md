@@ -10,14 +10,16 @@ von Zhouyi Xu und Rico Scholz
     - D elete
 2. Speichern der Daten in einer IndexedDB um zwischen Sessions persistent zu bleiben
 
-3. Aufruf externe Schnittstellen um Tweets mit Daten zu generieren z.B. aktuelles Wetter
+3. Aufruf externe Schnittstellen um Tweets mit Daten zu generieren z.B. aktuelles Wetter oder Bilder von süßen Hunden
 
 ## Umsetzung
 
 Für die Entwicklung dieser Website waren keine Framworks nötig und wir verwendeten nur das erlernte Wissen aus den Vorlesungen
 
-1. Styling (flexbox etc) ...
+1. Flexbox und Media Querries für responsive Design
 
-2. IndexedDB ...
+2. [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API?retiredLocale=de) zum Speichern der Daten
 
-3. API requests ...
+3. verwendete APIs:
+    - [Open Meteo](https://open-meteo.com/)
+    - [Dog CEO](https://dog.ceo/)
