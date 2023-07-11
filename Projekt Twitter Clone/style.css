@@ -1,0 +1,394 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1d9bf0;
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1a86ce;
+}
+
+html,
+body {
+    min-width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #1d9bf0;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*-------------------------------------------------------------------------*/
+
+#dev-tools {
+    visibility: hidden;
+    position: absolute;
+    left: -150px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s;
+}
+
+#dev-tools.active {
+    visibility: visible;
+    transform: translateX(150px);
+}
+
+#dev-tools>button {
+    width: 150px;
+    padding: 0.5em;
+    border: none;
+    background-color: #1d9bf0;
+    color: white;
+    font-weight: bold;
+}
+
+/*-------------------------------------------------------------------------*/
+
+footer {
+    background-color: #1d9bf0;
+    color: white;
+    max-width: 100%;
+    padding: 0.3em 0;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/*-------------------------------------------------------------------------*/
+
+main,
+aside {
+    padding: 1.5em 0;
+}
+
+aside>h1,
+main>h1 {
+    padding: 0.2em 1em;
+}
+
+main {
+    width: 60%;
+    border-left: 1px solid #eff3f4;
+    border-right: 1px solid #eff3f4;
+}
+
+.tweets {
+    display: flex;
+    flex-direction: column;
+}
+
+.tweetbox {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    align-items: flex-end;
+    margin-bottom: 1.2em;
+}
+
+#tweetbox-tweet {
+    resize: none;
+    padding: 1em;
+    border-radius: 16px;
+    border: 1px solid #ececec;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    width: 100%;
+}
+
+#tweetbox-tweet.invalid {
+    border: 2px solid red;
+}
+
+.tweetbox-submit {
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0.4em;
+    margin-left: 0.6em;
+    width: 6em;
+}
+
+.tweet {
+    padding: 1.2em;
+}
+
+.tweet-table {
+    width: 100%;
+    padding: 2em 6em;
+}
+
+.tweet-table th {
+    background-color: #1d9bf0;
+    color: white;
+    padding: 0.8em;
+}
+
+.tweet-table td {
+    padding: 0.8em;
+}
+
+.tweet-table tr:nth-child(even) {
+    background-color: #d2ebff;
+}
+
+.tweet:hover {
+    background-color: #ececec;
+}
+
+.tweet-caption {
+    width: 100%;
+    display: flex;
+    margin-bottom: 0.5em;
+}
+
+.tweet-name {
+    font-weight: bold;
+}
+
+.tweet-username,
+.tweet-time {
+    margin-left: 0.5em;
+    color: #626262;
+}
+
+.tweet-buttons {
+    margin-left: auto;
+}
+
+.tweet-buttons>button {
+    border: none;
+    background-color: inherit;
+}
+
+.tweet-buttons>img {
+    width: 1.4em;
+}
+
+.tweet-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tweet-text {
+    overflow-wrap: break-word;
+    border: none;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 2em;
+}
+
+.tweet-image {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/*-------------------------------------------------------------------------*/
+
+aside.left {
+    width: 10%;
+}
+
+nav {
+    width: 50px;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+nav>button {
+    border: none;
+    background-color: inherit;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+}
+
+nav>button:hover {
+    background-color: #ececec;
+}
+
+nav>button>img {
+    width: 60%;
+}
+
+/*-------------------------------------------------------------------------*/
+
+aside.right {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 30%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.login {
+    border: 1px solid #eff3f4;
+    padding: 1em;
+    border-radius: 16px;
+}
+
+.login>h1 {
+    padding-bottom: 0.4em;
+}
+
+.login>span {
+    font-size: 0.8em;
+    color: gray;
+}
+
+.login-inputs {
+    padding: 1em 0;
+}
+
+.login-inputs>input {
+    width: 100%;
+    background-color: inherit;
+    border-radius: 20px;
+    padding: 1em;
+    border: 1px solid rgb(239, 243, 244);
+}
+
+.login-inputs>input.invalid {
+    border: 2px solid red;
+}
+
+.login-inputs>input:first-child {
+    margin-bottom: 1em;
+}
+
+.trends {
+    background-color: #f7f9f9;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.trends>h1 {
+    padding: 0.5em;
+}
+
+.trend {
+    cursor: pointer;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.trend:hover {
+    background-color: #ececec;
+}
+
+.trend-title {
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0.3em 0;
+}
+
+.trend-content {
+    color: gray;
+    font-size: 0.9em;
+}
+
+.trend-mehr-anzeigen {
+    color: #1d9bf0;
+    font-weight: bold;
+}
+
+.mandatory {
+    padding: 0 0.5em;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.responsive{
+    display: flex;
+    width: 100%;
+}
+
+@media only screen and (max-width: 710px) {
+    #content {
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    aside.left {
+        width: 100%;
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav>button {
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    aside.right {
+        width: 100%;
+    }
+
+    .trends {
+      display: none;
+    }
+
+    .responsive{
+        flex-direction: column-reverse;
+    }
+
+    .mandatory{
+        display: none;
+    }
+
+    .datenschutz{
+        display: none;
+    }
+}

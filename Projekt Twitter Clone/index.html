@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="db_access.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="dev-tools">
+        <button class="dev-random-tweet">Create Random</button>
+        <button class="dev-weather-tweet">Create Weather</button>
+        <button class="dev-dog-tweet">Create Dog</button>
+        <button class="dev-mocks-only">Mocks only</button>
+        <button class="dev-delete-all">Delete all</button>
+    </div>
+
+    <div id="content">
+        <aside class="left">
+            <nav>
+                <button><a href=""><img src="assets/twitter-logo.svg" alt="Twitter Logo" width="30"
+                            height="30"></a></button>
+                <button><img src="assets/search.svg" alt="Search" width="30" height="30"></button>
+                <button><img src="assets/settings.svg" alt="Settings" width="30" height="30"
+                        class="toggle-dev-tools"></button>
+            </nav>
+        </aside>
+
+        <div class="responsive">
+            <main>
+                <h1>Tweets</h1>
+                <form class="tweetbox" action="javascript:void(0);">
+                    <textarea name="tweetbox" id="tweetbox-tweet" cols="60" rows="5" maxlength="280"
+                        placeholder="What's happening?"></textarea>
+                    <div>
+                        <span id="tweetbox-charlength">280</span>
+                        <button class="tweetbox-submit">Tweet</button>
+                    </div>
+                </form>
+                <div class="tweets"></div>
+            </main>
+
+            <aside class="right">
+                <div class="login">
+                    <h1>Wer bist du?</h1>
+                    <span>
+                        Erstelle dir am Besten keinen Account, es lohnt sich nicht!
+                    </span>
+                    <div class="login-inputs">
+                        <input type="text" placeholder="Name" id="fullname">
+                        <input type="text" placeholder="Username" id="username">
+                    </div>
+                    <span class="datenschutz">
+                        Indem du dich registrierst, stimmst du sehr vielen Dingen zu, die du später bereuen wirst!
+                        Informiere dich am besten nicht über den <a href="#">Datenschutz</a>. Es gibt keinen. Dafür gibt
+                        es
+                        extra viele <a href="#">Cookies</a>!
+                    </span>
+                </div>
+
+                <div class="trends">
+                    <h1>Trend Mocks</h1>
+                    <div class="trend">
+                        <span class="trend-content">Unterhaltung · Trends</span>
+                        <span class="trend-title">Banane</span>
+                        <span class="trend-content">190.000 Tweets</span>
+                    </div>
+                    <div class="trend">
+                        <span class="trend-content">Trend in Deutschland</span>
+                        <span class="trend-title">For You</span>
+                        <span class="trend-content">6.252 Tweets</span>
+                    </div>
+                    <div class="trend">
+                        <span class="trend-content">Trend in Deutschland</span>
+                        <span class="trend-title">KI-generiertes Bild</span>
+                        <span class="trend-content"></span>
+                    </div>
+                    <div class="trend">
+                        <span class="trend-content">Wissenschaft · Trends</span>
+                        <span class="trend-title">Klimawandel</span>
+                        <span class="trend-content">6.252 Tweets</span>
+                    </div>
+                    <div class="trend">
+                        <span class="trend-mehr-anzeigen">Mehr anzeigen</span>
+                    </div>
+                </div>
+
+                <div class="mandatory">
+                    Allgemeine Geschäftsbedingungen<br>
+                    Datenschutzrichtlinien<br>
+                    Cookie-Richtlinie<br>
+                    Diese Angaben sind nicht echt
+                    Impressum<br>
+                    Barrierefreiheit
+                    Anzeigen-Info
+                    Mehr<br>
+                    © 2023 Nicht Twitter, Inc.
+                </div>
+            </aside>
+        </div>
+    </div>
+    <footer>Wer Bescheid weiß, weiß Bescheid.</footer>
+</body>
+
+
+</html>
